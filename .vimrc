@@ -13,6 +13,10 @@ set number                 "显示行号
 set ci                     " 类似C语言程序的缩进
 set pastetoggle=<F9>       "进入insert模式，按F9，就可以关闭自动缩进
 
+"使用tab键来代替%进行匹配跳转
+nnoremap <tab> %
+vnoremap <tab> %
+
 set clipboard+=unnamed     "共享剪贴板"
 "Vundle Settings {
 set rtp+=~/.vim/bundle/vundle/
@@ -39,6 +43,8 @@ Bundle 'gmarik/vundle'
   Bundle 'mattn/emmet-vim'
   " coffee-scrpit support
   Bundle 'kchmck/vim-coffee-script'
+  " Git in vim
+  Bundle 'tpope/vim-fugitive'
  
  " vim-scripts repos
   
