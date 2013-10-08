@@ -29,6 +29,9 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
 
+" molokai set
+set background=dark
+
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -45,6 +48,8 @@ Bundle 'gmarik/vundle'
   Bundle 'kchmck/vim-coffee-script'
   " Git in vim
   Bundle 'tpope/vim-fugitive'
+  " better color
+  Bundle 'tomasr/molokai'
  
  " vim-scripts repos
   
