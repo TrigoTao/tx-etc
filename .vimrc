@@ -30,6 +30,8 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
 " molokai set
+" let g:molokai_original = 1
+let g:rehash256 = 1
 set background=dark
 
 " let Vundle manage Vundle
@@ -40,8 +42,8 @@ Bundle 'gmarik/vundle'
  "
  " original repos on github
  
-  " 在输入()等需要配对的符号时，自动帮你补全剩余半个
-  Bundle 'AutoClose'
+  " 在两端加上、修改、删除匹配的符号如（）
+  Bundle 'tpope/vim-surround'
   " 神级插件，ZenCoding(原名)可以让你以一种神奇而无比爽快的感觉写HTML、CSS
   Bundle 'mattn/emmet-vim'
   " coffee-scrpit support
@@ -53,17 +55,19 @@ Bundle 'gmarik/vundle'
  
  " vim-scripts repos
   
+  " 在输入()等需要配对的符号时，自动帮你补全剩余半个
+  Bundle 'AutoClose'
+  " Use the repeat command (.) with supported plugins
+  Bundle 'repeat.vim'
   " 在VIM的编辑窗口树状显示文件目录
   Bundle 'The-NERD-tree'
   " 切换缓冲区
   Bundle 'minibufexpl.vim'
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
  " non github repos
- "Bundle 'git://git.wincent.com/command-t.git'
+  "Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
- "Bundle 'file:///Users/gmarik/path/to/plugin'
- " ...
+  "Bundle 'file:///Users/gmarik/path/to/plugin'
+  " ...
 
  filetype plugin indent on     " required!
  "
