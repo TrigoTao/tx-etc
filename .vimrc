@@ -3,9 +3,9 @@ filetype off              "必须的设置：
 autocmd! bufwritepost _vimrc source %         "自动载入配置文件不需要重启
 
 "tab setting {
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop     =2
+set shiftwidth  =2
+set softtabstop =2
 set expandtab
 "}
 "
