@@ -1,6 +1,11 @@
-set nocompatible          "不要兼容vi
+set nocompatible          "不要兼容vi 必须在第一行
 filetype off              "必须的设置：
 autocmd! bufwritepost _vimrc source %         "自动载入配置文件不需要重启
+
+"在使用screen的时候加上这段防止方向键失效
+if match($TERM, "screen")!=-1
+  set term=xterm
+endif
 
 "tab setting {
 set tabstop     =2
