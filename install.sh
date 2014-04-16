@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp -r .vim .bashrc .vimrc ~
+cp -r .vim .bashrc .vimrc .screenrc ~
