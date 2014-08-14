@@ -41,6 +41,14 @@ set background=dark
 
 colorscheme desert
 
+""""""""""""""""""""""""""""""
+" Tag list (ctags)
+""""""""""""""""""""""""""""""
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口 
+
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -59,6 +67,8 @@ Bundle 'gmarik/vundle'
   Bundle 'tpope/vim-fugitive'
   " better color
   Bundle 'tomasr/molokai'
+  " 亚洲文件编码
+  Bundle 'vimscript/FencView'
  
  " vim-scripts repos
   
@@ -70,6 +80,8 @@ Bundle 'gmarik/vundle'
   Bundle 'The-NERD-tree'
   " 切换缓冲区
   Bundle 'minibufexpl.vim'
+  " 切换tag
+  Bundle 'taglist.vim'
  " non github repos
   "Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
