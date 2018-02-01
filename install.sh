@@ -1,19 +1,8 @@
 #!/bin/sh
 
-cp .bashrc .vimrc .screenrc ~
+cp .vimrc ~
 
-if [ ! -d "$HOME/.vim" ]; then
-  cp -r .vim ~
-fi
-
-#deploy vundle
-if [ ! -d "$HOME/.vim/bundle/vundle" ]; then
-  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-fi
-
-#install ctags
-if dpkg-query -W "exuberant-ctags"; then 
-  echo "installed"; 
-else
-  apt-get install exuberant-ctags
+#install vundle
+if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi

@@ -1,4 +1,0 @@
-etc
-
-
-my config
